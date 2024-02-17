@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane fx:id="loginLabel" animated="false" collapsible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="193.0" prefWidth="290.0" text="Login" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="320.0">
+         <children>
+            <Button id="logBtn" fx:id="logBtn" layoutX="122.0" layoutY="110.0" mnemonicParsing="false" onAction="#LoginHandler" text="Login" />
+            <Label id="userField" fx:id="userLabel" layoutX="117.0" layoutY="6.0" text="Username" />
+            <TextField id="userField" fx:id="userField" layoutX="70.0" layoutY="23.0" onAction="#LoginHandler" />
+            <Label fx:id="passLabel" layoutX="120.0" layoutY="63.0" text="Password" />
+            <TextField id="passField" fx:id="passField" layoutX="70.0" layoutY="81.0" />
+            <Label fx:id="zoneID" layoutX="4.0" layoutY="145.0" prefHeight="17.0" prefWidth="282.0" text="Zone" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
